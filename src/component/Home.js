@@ -1,14 +1,11 @@
-import React, {useState} from 'react'
-
+import React from 'react'
+import Navbar from './Navbar';
 const Home = () => {
-    const [word, setWord] = useState('');
-    const Toggle = () => {
-    setWord(!word)
-    }
+   
     return (
-        <div className="Home__">
+        <div>
+        <Navbar/>
             <h1>Hello</h1>
-            <button onClick={Toggle}>{word ? 'HI' : 'THERE'}</button>
         </div>
     )
 }
